@@ -1,19 +1,47 @@
-#Meu Ubuntu Auto Install
+#cloud-config
 autoinstall:
   version: 1
   identity:
-  #nome de usuario, senha e nome da maquina
     realname: 'Pedro Felipe'
     username: pedrofelipe
     password: '$y$j9T$FekICyk5nXxOOn5at0/CI.$m5H9NZFYngr7dsqKr3Pc5fk.oV4VGEzXjAPZ9Kas8q4'
     hostname: ubuntu-pedro
-  #local e teclado
   locale: pt_BR.utf8
   keyboard:
-      layout: br
+    layout: br
   timezone: "America/Sao_Paulo" 
-  #snaps
+  packages:
+    - curl
+    - nano
+    - flatpak
+    - git
+    - wget
+    - gnome-tweaks
+    - gnome-shell-extensions
+    - neofetch
+    - vlc
+    - pdfarranger
+    - nodejs
+    - npm
+    - wine
+    - unzip
+    - zip
+    - rar
+    - unrar  
   snaps:
-    - name: code
+    - name: code  
       channel: stable
-      classic: false
+      classic: true
+    - name: spotify
+      channel: stable
+    - name: postman
+      channel: stable
+      classic: true
+    - name: bitwarden
+      channel: stable
+  codecs:
+    install: true
+  drivers:
+    install: true
+  updates: all
+  shutdown: reboot

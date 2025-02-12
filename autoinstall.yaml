@@ -2,11 +2,18 @@
 autoinstall:
   version: 1
   identity:
+  #nome de usuario, senha e nome da maquina
     realname: 'Pedro Felipe'
     username: pedrofelipe
     password: '$y$j9T$FekICyk5nXxOOn5at0/CI.$m5H9NZFYngr7dsqKr3Pc5fk.oV4VGEzXjAPZ9Kas8q4'
     hostname: ubuntu-pedro
-    locale: pt_BR.utf8
-    keyboard:
-        layout: br
-    timezone: "America/Sao_Paulo" 
+  #local e teclado
+  locale: pt_BR.utf8
+  keyboard:
+      layout: br
+  timezone: "America/Sao_Paulo" 
+  #snaps
+  snaps:
+    - name: code
+      channel: stable
+      classic: false

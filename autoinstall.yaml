@@ -2,3 +2,8 @@
 autoinstall:
   version: 1
   identity:
+    realname: 'Pedro Felipe'
+    username: pedrofelipe
+    password: '$y$j9T$FekICyk5nXxOOn5at0/CI.$m5H9NZFYngr7dsqKr3Pc5fk.oV4VGEzXjAPZ9Kas8q4'
+    hostname: ubuntu-pedro
+    

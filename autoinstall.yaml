@@ -1,0 +1,4 @@
+#Meu Ubuntu Auto Install
+autoinstall:
+  version: 1
+  identity:
